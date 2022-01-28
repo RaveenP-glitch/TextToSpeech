@@ -78,3 +78,17 @@ document.querySelector("#cancel").addEventListener("click", () => {
   // Cancel the speechSynthesis instance
   window.speechSynthesis.cancel();
 });
+
+
+var x = document.getElementById("myCheck").checked;
+
+function myFunction(){
+    let element = document.getElementsByTagName("h1");
+    if(x){
+
+        element.className = ("text-light");
+    }else{
+        element.className = ("text-dark");
+    }
+
+}
