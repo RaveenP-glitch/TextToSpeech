@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const dotenv = require("dotenv");
+// const dotenv = require("dotenv");
 const app = express();
 require("dotenv").config();
 
@@ -16,7 +16,7 @@ const URL = process.env.MONGODB_URL;
 mongoose.connect(URL, {
     useCreateIndex : true,
     useNewUrlParser: true,
-    useUnifiedTopology: true,
+    useUnifiedTopologyL: true,
     useFindAndModify: false
 });
 
